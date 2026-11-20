@@ -1,9 +1,11 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
-export type TilPost = {
+export type HelpRequest = {
   id: string;
-  nickname: string;
-  content: string;
+  student_info: string;
+  category: string;
+  message: string;
+  is_resolved: boolean;
   created_at: string;
 };
 
